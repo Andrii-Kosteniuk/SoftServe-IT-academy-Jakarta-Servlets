@@ -3,13 +3,11 @@
 <head>
     <title>Home Page</title>
 
-    <style>
-        <%@include file="../styles/main.css"%>
-    </style>
-
 </head>
+
 <body>
 <%@include file="header.html" %>
+
 <div class="container d-flex justify-content-center">
     <h2 style="color: brown">Welcome to awesome To-Do List!!!</h2>
 </div>

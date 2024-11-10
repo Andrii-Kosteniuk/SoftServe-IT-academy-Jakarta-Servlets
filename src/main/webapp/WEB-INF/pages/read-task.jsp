@@ -9,6 +9,8 @@
     <title>Read existing Task</title>
 
 </head>
+
+
 <body>
     <%@include file="header.html" %>
 
@@ -24,6 +26,5 @@
                 <span><b>Priority: </b></span><span><%= task.getPriority() %></span><br>
             </div>
         </div>
-
 </body>
 </html>

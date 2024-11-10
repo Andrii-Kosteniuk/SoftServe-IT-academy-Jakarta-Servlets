@@ -20,12 +20,10 @@
 <div class="alert alert-warning d-flex align-items-center " style="justify-content: center"
      role="alert"><%= successOnDelete %>
 </div>
-<%
-        session.removeAttribute("successOnDelete");
-    }
-%>
+<%session.removeAttribute("successOnDelete");}%>
 <div class="container d-flex justify-content-center">
     <table class="table table-striped w-75 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
+
         <thead>
         <tr class="table-primary">
             <th>No</th>
@@ -36,6 +34,7 @@
             <th></th>
         </tr>
         </thead>
+
         <tbody>
             <% List<Task> tasks = (List<Task>) request.getAttribute("tasks"); %>
             <% for (Task task : tasks) { %>
@@ -60,4 +59,5 @@
     </table>
 </div>
 </body>
+
 </html>

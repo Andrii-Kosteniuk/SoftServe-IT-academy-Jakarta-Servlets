@@ -26,10 +26,7 @@
                 <div class="alert alert-danger d-flex align-items-center " style="justify-content: center"
                      role="alert"><%= error %>
                 </div>
-                <%
-                        session.removeAttribute("errorMessage");
-                    }
-                %>
+                <%session.removeAttribute("errorMessage");}%>
                 <%
                     String success = (String) session.getAttribute("successOnCreated");
                     if (success != null) {

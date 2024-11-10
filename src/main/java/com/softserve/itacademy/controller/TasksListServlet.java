@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+
 @WebServlet(value = "/tasks-list")
 public class TasksListServlet extends HttpServlet {
 
@@ -31,5 +32,6 @@ public class TasksListServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         // Optional: Logic for handling POST requests if needed
+
     }
 }

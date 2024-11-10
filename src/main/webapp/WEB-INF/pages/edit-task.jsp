@@ -27,10 +27,7 @@
                 %>
                 <div class="alert alert-success d-flex align-items-center " style="justify-content: center"role="alert"><%= success %>
                 </div>
-                <%
-                        session.removeAttribute("successOnUpdated");
-                    }
-                %>
+                <%session.removeAttribute("successOnUpdated");}%>
 
                 <% Task task = (Task) request.getAttribute("task"); %>
 

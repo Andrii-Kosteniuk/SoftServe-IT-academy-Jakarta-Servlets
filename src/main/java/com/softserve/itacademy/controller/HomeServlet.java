@@ -17,6 +17,7 @@ public class HomeServlet extends HttpServlet {
         requestDispatcher.forward(request, response);
     }
 
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         // Handle POST requests if necessary

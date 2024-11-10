@@ -35,8 +35,10 @@ public class ReadTaskServlet extends HttpServlet {
         if (task == null) {
             request.getRequestDispatcher("/WEB-INF/pages/error.jsp").forward(request, response);
         }
+
         request.getRequestDispatcher("/WEB-INF/pages/read-task.jsp").forward(request, response);
     }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {

@@ -29,17 +29,15 @@ public class DeleteTaskServlet extends HttpServlet {
 
         boolean isDeleted = taskRepository.delete(id);
 
-
         task = taskRepository.read(id);
 
         if (isDeleted) {
             request.getSession().setAttribute("successOnDelete", "Task with id " + id + " was deleted");
             response.sendRedirect("/tasks-list");
         }
-
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)  {
     }
 }

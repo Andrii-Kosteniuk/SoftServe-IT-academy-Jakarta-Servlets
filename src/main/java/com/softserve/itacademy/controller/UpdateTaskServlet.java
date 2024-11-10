@@ -24,6 +24,7 @@ public class UpdateTaskServlet extends HttpServlet {
         taskRepository = TaskRepository.getTaskRepository();
     }
 
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         id = request.getParameter("id");
@@ -47,7 +48,6 @@ public class UpdateTaskServlet extends HttpServlet {
         String title = request.getParameter("title");
         String priority = request.getParameter("priority");
 
-
         request.setAttribute("task", task);
 
         task.setTitle(title);
@@ -59,6 +59,5 @@ public class UpdateTaskServlet extends HttpServlet {
             request.getSession().setAttribute("successOnUpdated", "Task has been successfully updated");
             response.sendRedirect("/edit-task");
         }
-
     }
 }

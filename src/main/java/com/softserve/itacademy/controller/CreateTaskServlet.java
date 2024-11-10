@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(value = "/create-task")
+@WebServlet("/create-task")
 public class CreateTaskServlet extends HttpServlet {
 
     private TaskRepository taskRepository;
@@ -29,7 +29,7 @@ public class CreateTaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         String title = request.getParameter("title");
         String priority = request.getParameter("priority");
@@ -48,9 +48,6 @@ public class CreateTaskServlet extends HttpServlet {
         if (isCreated) {
             request.getSession().setAttribute("successOnCreated", "Task has been successfully created");
             response.sendRedirect("/create-task");
-
         }
     }
-
-
 }
