@@ -7,18 +7,14 @@
           crossorigin="anonymous">
     <title>Create Task</title>
 </head>
-<style>
 
-</style>
 <body>
-<div class="navbar navbar-expand-lg bg-body-tertiary">
-    <%@include file="header.html" %>
-</div>
+<%@include file="header.html" %>
 
-<div class="container d-flex justify-content-center" style="margin-top: 3rem;">
+<div class="container d-flex justify-content-center" style="margin-top: 2rem;">
     <div class="col-6">
 
-        <div class="card border-success mb-6">
+        <div class="card border-success mb-6 shadow p-3 mb-5 bg-body-tertiary rounded">
             <div class="card-header text-center">
                 <h2>Create New Task</h2>
             </div>

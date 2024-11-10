@@ -13,13 +13,10 @@
 
 </style>
 <body>
-<div class="navbar navbar-expand-lg bg-body-tertiary">
-    <%@include file="header.html" %>
-</div>
-
-<div class="container d-flex justify-content-center" style="margin-top: 3rem;">
+<%@include file="header.html" %>
+<div class="container d-flex justify-content-center" style="margin-top: 1rem;">
     <div class="col-6">
-        <div class="card border-success mb-3">
+        <div class="card border-success mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
             <div class="card-header text-center">
                 <h3>Edit existing task</h3>
             </div>
